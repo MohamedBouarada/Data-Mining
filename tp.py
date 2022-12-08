@@ -13,7 +13,7 @@ def plot_2D(data, target, target_names):
     pl.figure()
     for i, c, label in zip(target_ids, colors, target_names):
             pl.scatter(data[target == i, 0], data[target == i, 1], c=c, label=label)
-            pl.legend()
-            pl.show()
+    pl.legend()
+    pl.show()
 
 plot_2D(irisData.data,irisData.target,irisData.target_names)
